@@ -1,0 +1,202 @@
+/*
+Name: Mia Ehrlich
+Coding 04
+Purpose: This is the main.css file for both index.html and contact.html for a mobile first responsive site
+ */
+
+/*
+ * your standard (i.e. mobile) css here
+ */
+
+/*Structural Styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #fcf4d9;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.page__container {
+    min-height: 100%;
+}
+
+.content__wrap {
+    padding-bottom: 3em;
+}
+
+/* Header Logo and Nav Styles*/
+.header__logo {
+    background-color: #00aaa0;
+    border-bottom: 3px solid #ffb85f;
+    overflow: hidden;
+}
+
+.header--logo-img{
+    width: 50%;
+    max-width: 150px;
+    padding: 2px;
+    float: left;
+}
+
+nav ul {
+    width: 50%;
+    list-style-type: none;
+    float: right;
+}
+
+nav li {
+    width: 100%;
+    float: left;
+    margin: 5px;
+}
+
+nav li a, nav li a:visited {
+    display: block;
+    color: #fcf4d9;
+    background-color: #ff7a5a;
+    border: 2px solid #ffb85f;
+    border-radius: 15px 0 0 15px;
+    font-variant: small-caps;
+    text-align: end;
+    text-decoration: none;
+    padding: .5em;
+}
+
+nav li a:hover, nav li a:active {
+    background-color: #fcf4d9;
+    color: #ff7a5a;
+    text-decoration: none;
+    padding: 1em;
+}
+
+/* Article Styles for index.html*/
+main {
+    margin: 1.5em 0;
+}
+main h1 {
+    background-color: #ffb85f;
+}
+
+.article__heading {
+    font-family: Chalkboard, sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #462066;
+    margin: 0.5em 0 1em 0;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-shadow: 4px 3px 4px #fcf4d9,
+    6px 5px 2px #8ed2c9,
+    10px 9px 2px #00aaa0;
+}
+
+.article__img {
+    width: 100%;
+}
+
+.article__text {
+    letter-spacing: 1px;
+    color: #462066;
+    margin: 0.5em 0;
+}
+
+.article__text--first-word {
+    font-family: Chalkboard, sans-serif;
+    font-size: 1.1em;
+    color: #ffb85f;
+}
+
+.article__text::first-letter {
+    font-size: 2em;
+    color: #ff7a5a;
+}
+
+/*Form Styles for contact.html*/
+input, textarea {
+    width: 100%;
+    padding: 0.4em;
+    margin-bottom: 0.8em;
+}
+
+.msg__container {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    text-align: center;
+    color: #fcf4d9;
+    background-color: #00aaa0;
+    padding: 1em 0;
+    border-top: 3px solid #ffb85f;
+    border-bottom: 3px solid #ffb85f;
+    margin: 0 auto 2em;
+}
+
+.form__button-container{
+    text-align: center;
+}
+
+button {
+    background-color: #ff7a5a;
+    color: #fcf4d9;
+    padding: 0.8em;
+    margin-right: 0.5em;
+    text-align: center;
+    border: 2px solid #ffb85f;
+    border-radius: 15px;
+    font-variant: small-caps;
+}
+
+button:hover, button:active {
+    background-color: #fcf4d9;
+    color: #ff7a5a;
+    padding: 1em;
+}
+
+
+/*Footer Styles*/
+footer{
+    background-color: #ff7a5a;
+    color: #fcf4d9;
+    font-size: 0.9em;
+    font-variant: small-caps;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+}
+
+footer span {
+    display: block;
+}
+
+/* Desktop Styles*/
+@media (min-width: 480px) {
+    /* Article Styles for index.html*/
+    article {
+        overflow: hidden;
+    }
+    .article__img {
+        width: 40%;
+        min-width: 250px;
+        margin-right: 1.5em;
+        margin-bottom: 0.75em;
+        float: left;
+    }
+}
+
+@media (min-width: 600px) {
+    /* Form styles for contact.html */
+    .msg__container {
+        width: 60%;
+        border: 3px solid #ffb85f;
+        border-radius: 15px;
+    }
+    form {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

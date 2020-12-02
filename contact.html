@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Name: Mia Ehrlich
+Coding 04
+Purpose: This is the contact page for a mobile first responsive site
+-->
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="main.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/ico">
+    </head>
+    <body>
+        <div class="page__container">
+            <div class="content__wrap">
+                <header>
+                    <div class="header__logo">
+                        <img class="header--logo-img" src="images/logo.png" alt="logo">
+                        <nav class="header__nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="https://www.austinpetsalive.org/adopt" target="_blank">Adopt</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <main>
+                    <h1 class="article__heading">Contact Us</h1>
+                    <div class="msg__container"  id="user-msg">
+                        <p>Fill out your information and we'll be in touch shortly.</p>
+                    </div>
+                    <form id="contactForm" name="contactForm" method="post" action="">
+                        <input type="text" id="name" name="name" placeholder="Name" maxlength="64">
+                        <input type="text" id="email1" name="remail1" placeholder="Return Email" maxlength="64">
+                        <input type="text" id="email2" name="remail2" placeholder="Re-enter Email" maxlength="64">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" maxlength="64">
+                        <textarea id="message" name="message" placeholder="Message" rows="10" maxlength="1000"></textarea>
+                        <div class="form__button-container">
+                            <button type="button" id="btn__send">Send</button>
+                            <button type="button" id="btn__clear">Clear</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+            <footer>
+                <span>&hearts; Adopt-A-Pet &hearts; Austin,TX &hearts;</span>
+                <span>&hearts;<time datetime="2020-02-06">February, 2020</time> &hearts;</span>
+            </footer>
+        </div>
+        <script src="main.js"></script>
+    </body>x
+</html>
